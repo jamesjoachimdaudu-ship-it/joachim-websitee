@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joachim James Daudu</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+body{
+  background:linear-gradient(135deg,#0f172a,#1e293b,#312e81);
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+  padding:20px;
+}
+.card{
+  max-width:600px;
+  width:100%;
+  background:rgba(255,255,255,0.08);
+  border-radius:20px;
+  padding:25px;
+  text-align:center;
+  box-shadow:0 20px 40px rgba(0,0,0,0.6);
+  backdrop-filter:blur(10px);
+}
+img{
+  width:170px;
+  height:170px;
+  border-radius:50%;
+  border:5px solid gold;
+  object-fit:cover;
+  margin-bottom:15px;
+}
+h1{
+  font-size:28px;
+  font-weight:600;
+}
+h2{
+  font-size:16px;
+  font-weight:300;
+  margin-bottom:15px;
+  color:#facc15;
+}
+p{
+  font-size:16px;
+  margin:10px 0;
+}
+.btn{
+  margin-top:15px;
+  padding:10px 22px;
+  border:none;
+  border-radius:10px;
+  background:gold;
+  color:black;
+  font-weight:600;
+  cursor:pointer;
+  transition:.3s;
+}
+.btn:hover{
+  background:white;
+}
+pre{
+  margin-top:15px;
+  text-align:left;
+  background:black;
+  padding:15px;
+  border-radius:10px;
+  max-height:300px;
+  overflow:auto;
+  display:none;
+  font-size:12px;
+}
+footer{
+  margin-top:15px;
+  font-size:13px;
+  opacity:.7;
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+  <img src="joachim.jpg" alt="Joachim James Daudu">
+  <h1>Joachim James Daudu</h1>
+  <h2>Computer Science Student</h2>
+
+  <p><strong>Matric Number:</strong><br> TSU/FSC/CS/24/1046</p>
+  <p>Welcome to my personal website. This page contains my basic academic identity and profile.</p>
+
+  <button class="btn" onclick="toggleCode()">View Website Code</button>
+
+  <pre id="codeBox"></pre>
+
+  <footer>
+    © 2026 Joachim James Daudu | Personal Website
+  </footer>
+</div>
+
+<script>
+function toggleCode(){
+  const box=document.getElementById("codeBox");
+  if(box.style.display==="block"){
+    box.style.display="none";
+  }else{
+    box.style.display="block";
+    box.textContent=document.documentElement.outerHTML;
+  }
+}
+</script>
+
+</body>
+</html>#80FF00
